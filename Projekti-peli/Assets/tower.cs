@@ -8,6 +8,7 @@ public class tower : MonoBehaviour
     public Transform gunPoint;
     public GameObject Bullet;
     public float speed;
+    public int Damage;
 
     [Header("aiming")]
     public Transform gun;
@@ -30,6 +31,7 @@ public class tower : MonoBehaviour
     {
         GameObject _bullet = Instantiate(Bullet, gunPoint.position, gunPoint.rotation);
         _bullet.GetComponent<Rigidbody>().velocity = gunPoint.forward * speed;
+        _bullet.GetComponent<bulle>().Damage = Damage;
 
     }
 

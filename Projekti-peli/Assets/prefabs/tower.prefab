@@ -181,7 +181,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gunPoint: {fileID: 144888111566971701}
   Bullet: {fileID: 6785367996779034149, guid: e0792e958464cea40a48eae0226eb22f, type: 3}
-  speed: 5
+  speed: 20
+  Damage: 25
   gun: {fileID: 3623743328181187849}
   closestEnemy: {fileID: 0}
 --- !u!1 &6878474359975695363
