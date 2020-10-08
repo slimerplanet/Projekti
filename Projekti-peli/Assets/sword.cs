@@ -5,6 +5,13 @@ using UnityEngine;
 public class sword : MonoBehaviour
 {
     public Animator animator;
+    [SerializeField] Camera cam;
+    [SerializeField] LayerMask mask;
+
+    [SerializeField] int range;
+
+
+
     public int damage;
     [SerializeField] private bool attacking;
     private void Start()
@@ -14,16 +21,29 @@ public class sword : MonoBehaviour
     }
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Mouse0)) {
-            animator.SetBool("attack", true);
+        if(Input.GetKeyDown(KeyCode.Mouse0) && !attacking) {
             attacking = true;
-        }else if(Input.GetKeyUp(KeyCode.Mouse0)){
+            Attack();
+        }
+
+        if(attacking)
+            animator.SetBool("attack", true);
+        else
             animator.SetBool("attack", false);
-            Invoke("setattackFalse", 0.25f);
+    }
+
+    public void Attack()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, range, mask))
+        {
+            print(hit.collider.name);
+            var obj = hit.collider.gameObject;
+            if(obj.GetComponent<enemy>() != null)
+            {
+                obj.GetComponent<enemy>().TakeDamage(damage);
+            }
         }
     }
 
-    void setattackFalse() => attacking = false;
-
-    //moi
 }

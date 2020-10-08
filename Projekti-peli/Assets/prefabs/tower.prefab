@@ -225,7 +225,7 @@ MonoBehaviour:
   Damage: 25
   rotationaxis: {fileID: 9107803396210801602}
   closestEnemy: {fileID: 0}
-  range: 10
+  range: 30
 --- !u!1 &8699369251544415818
 GameObject:
   m_ObjectHideFlags: 0
