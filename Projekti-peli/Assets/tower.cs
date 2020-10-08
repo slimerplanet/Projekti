@@ -24,8 +24,15 @@ public class tower : MonoBehaviour
 
     private void Update()
     {
-        if (getClosestenemy() == null && Vector3.Distance(getClosestenemy().position, transform.position) > range)
+        if (getClosestenemy() == null)
+        {
             return;
+        }
+        if (Vector3.Distance(getClosestenemy().position, transform.position) > range)
+        {
+            return;
+        }
+
 
         Vector3 direction = getClosestenemy().position - gunPoint.position;
         Quaternion rotation = Quaternion.LookRotation(direction);

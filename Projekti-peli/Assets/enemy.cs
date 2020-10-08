@@ -25,13 +25,11 @@ public class enemy : MonoBehaviour
 
         if (agent.remainingDistance <= agent.stoppingDistance)
         {
-            animator.enabled = true;
 
             hasReachedBase = true;
         }
         else
         {
-            animator.enabled = false;
 
             hasReachedBase = false;
 
