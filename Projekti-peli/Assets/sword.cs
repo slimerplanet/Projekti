@@ -7,6 +7,8 @@ public class sword : MonoBehaviour
     public Animator animator;
     [SerializeField] Camera cam;
     [SerializeField] LayerMask mask;
+    public AudioClip[] Sounds;
+    public AudioSource source;
 
     [SerializeField] int range;
 
@@ -34,6 +36,8 @@ public class sword : MonoBehaviour
 
     public void Attack()
     {
+        source.clip = Sounds[Random.Range(0, Sounds.Length)];
+        source.Play();
         RaycastHit hit;
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, range, mask))
         {
