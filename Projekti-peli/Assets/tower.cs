@@ -14,6 +14,7 @@ public class tower : MonoBehaviour
     public Transform gun;
     private GameObject[] multipleEnemys;
     public Transform closestEnemy;
+    public float range = 10;
 
     private void Start()
     {
@@ -23,6 +24,9 @@ public class tower : MonoBehaviour
 
     private void Update()
     {
+        if (getClosestenemy() == null && Vector3.Distance(getClosestenemy().position, transform.position) > range)
+            return;
+
         Vector3 direction = getClosestenemy().position - gun.position;
         Quaternion rotation = Quaternion.LookRotation(direction);
         gun.rotation = rotation;
@@ -38,6 +42,10 @@ public class tower : MonoBehaviour
     public Transform getClosestenemy()
     {
         multipleEnemys = GameObject.FindGameObjectsWithTag("Enemy");
+        
+        if (multipleEnemys == null)
+            return null;
+
         float closestDisctance = Mathf.Infinity;
         Transform trans = null;
         foreach(GameObject go in multipleEnemys)
