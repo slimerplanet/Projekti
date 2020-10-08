@@ -11,7 +11,7 @@ public class tower : MonoBehaviour
     public int Damage;
 
     [Header("aiming")]
-    public Transform gun;
+    public Transform rotationaxis;
     private GameObject[] multipleEnemys;
     public Transform closestEnemy;
     public float range = 10;
@@ -27,9 +27,9 @@ public class tower : MonoBehaviour
         if (getClosestenemy() == null && Vector3.Distance(getClosestenemy().position, transform.position) > range)
             return;
 
-        Vector3 direction = getClosestenemy().position - gun.position;
+        Vector3 direction = getClosestenemy().position - gunPoint.position;
         Quaternion rotation = Quaternion.LookRotation(direction);
-        gun.rotation = rotation;
+        rotationaxis.rotation = rotation;
     }
     public void shoot()
     {
