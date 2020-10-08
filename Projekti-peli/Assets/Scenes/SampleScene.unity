@@ -407,7 +407,7 @@ Transform:
   m_GameObject: {fileID: 368901297}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.76586, y: 0.76586, z: 0.76586}
   m_Children:
   - {fileID: 543450651726716081}
   - {fileID: 543450653021083439}
@@ -1121,7 +1121,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3248366579065337240, guid: dcb4353615827fc4a8e08aef7872bd37, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.504
+      value: 0.42
       objectReference: {fileID: 0}
     - target: {fileID: 3248366579065337240, guid: dcb4353615827fc4a8e08aef7872bd37, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1810,6 +1810,7 @@ GameObject:
   - component: {fileID: 543450653021083439}
   - component: {fileID: 919132148768099734}
   - component: {fileID: 919132148768099735}
+  - component: {fileID: 919132148768099736}
   m_Layer: 0
   m_Name: sword_1
   m_TagString: Untagged
@@ -1849,6 +1850,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 919132148768099734}
+  damage: 25
+  attacking: 0
+--- !u!65 &919132148768099736
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148768099733}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9245259, y: 4.2658277, z: 0.2739599}
+  m_Center: {x: -0.037737038, y: 3.8181903, z: -0.012337946}
 --- !u!23 &1711813854872201182
 MeshRenderer:
   m_ObjectHideFlags: 0
