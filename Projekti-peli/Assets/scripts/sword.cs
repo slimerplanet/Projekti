@@ -12,7 +12,7 @@ public class sword : MonoBehaviour
 
     [SerializeField] int range;
 
-    public int damage;
+    public int damage = 10;
     [SerializeField] private bool attacking;
     private void Start()
     {
