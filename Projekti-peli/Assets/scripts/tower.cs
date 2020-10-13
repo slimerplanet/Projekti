@@ -5,16 +5,16 @@ using UnityEngine;
 public class tower : MonoBehaviour
 {
     [Header("shooting")]
-    public Transform gunPoint;
-    public GameObject Bullet;
-    public float speed;
-    public int Damage;
+    [SerializeField] Transform gunPoint;
+    [SerializeField] LayerMask mask;
+    [SerializeField] float speed;
+    [SerializeField] int Damage;
 
     [Header("aiming")]
-    public Transform rotationaxis;
+    [SerializeField] Transform rotationaxis;
     private GameObject[] multipleEnemys;
-    public Transform closestEnemy;
-    public float range = 10;
+    [SerializeField] Transform closestEnemy;
+    [SerializeField] float range = 10;
 
     private void Start()
     {
@@ -40,9 +40,16 @@ public class tower : MonoBehaviour
     }
     public void shoot()
     {
-        GameObject _bullet = Instantiate(Bullet, gunPoint.position, gunPoint.rotation);
-        _bullet.GetComponent<Rigidbody>().velocity = gunPoint.forward * speed;
-        _bullet.GetComponent<bulle>().Damage = Damage;
+        RaycastHit hit;
+        if (Physics.Raycast(gunPoint.transform.position, gunPoint.transform.forward, out hit, range, mask))
+        {
+            print(hit.collider.name);
+            var obj = hit.collider.gameObject;
+            if (obj.GetComponent<enemy>() != null)
+            {
+                obj.GetComponent<enemy>().TakeDamage(Damage);
+            }
+        }
 
     }
 
