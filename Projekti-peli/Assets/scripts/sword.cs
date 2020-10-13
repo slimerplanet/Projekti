@@ -12,16 +12,14 @@ public class sword : MonoBehaviour
 
     [SerializeField] int range;
 
-
-
-    public int damage;
+    public int damage = 10;
     [SerializeField] private bool attacking;
     private void Start()
     {
         attacking = false;
         animator.SetBool("attack", false);
     }
-    private void Update()
+     private void Update()
     {
         if(Input.GetKeyDown(KeyCode.Mouse0) && !attacking) {
             attacking = true;
@@ -50,4 +48,5 @@ public class sword : MonoBehaviour
         }
     }
 
+    //moi
 }
