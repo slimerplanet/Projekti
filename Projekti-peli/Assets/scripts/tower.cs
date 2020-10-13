@@ -8,7 +8,9 @@ public class tower : MonoBehaviour
     [SerializeField] Transform gunPoint;
     [SerializeField] LayerMask mask;
     [SerializeField] float speed;
-    [SerializeField] int Damage;
+    [SerializeField] int Damage = 25;
+
+
 
     [Header("aiming")]
     [SerializeField] Transform rotationaxis;
@@ -20,6 +22,8 @@ public class tower : MonoBehaviour
     {
         closestEnemy = null;
         InvokeRepeating("shoot", 0.5f, 0.5f);
+
+
     }
 
     private void Update()
@@ -43,11 +47,13 @@ public class tower : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(gunPoint.transform.position, gunPoint.transform.forward, out hit, range, mask))
         {
-            print(hit.collider.name);
+            
             var obj = hit.collider.gameObject;
+                      
             if (obj.GetComponent<enemy>() != null)
             {
                 obj.GetComponent<enemy>().TakeDamage(Damage);
+                Debug.Log("hit");               
             }
         }
 

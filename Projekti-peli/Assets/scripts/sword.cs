@@ -17,7 +17,6 @@ public class sword : MonoBehaviour
     private void Start()
     {
         attacking = false;
-        animator.SetBool("attack", false);
     }
      private void Update()
     {
@@ -48,5 +47,4 @@ public class sword : MonoBehaviour
         }
     }
 
-    //moi
 }

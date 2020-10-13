@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class bulle : MonoBehaviour
+public class bullet : MonoBehaviour
 {
     public int Damage;
     private void Start()
