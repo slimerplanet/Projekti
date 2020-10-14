@@ -52,7 +52,7 @@ public class tower : MonoBehaviour
                       
             if (obj.GetComponent<enemy>() != null)
             {
-                obj.GetComponent<enemy>().TakeDamage(Damage);
+                obj.GetComponentInParent<enemy>().TakeDamage(Damage);
                 Debug.Log("hit");               
             }
         }

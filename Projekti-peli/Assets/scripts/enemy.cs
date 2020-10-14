@@ -20,21 +20,21 @@ public class enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        animator.SetFloat("speed", agent.velocity.magnitude);
+
         if (Health <= 0)
             Die();
 
         if (agent.remainingDistance <= agent.stoppingDistance)
         {
-
             hasReachedBase = true;
         }
         else
         {
-
             hasReachedBase = false;
-
         }
 
+        
         animator.SetBool("Attacking", hasReachedBase);
     }
 
