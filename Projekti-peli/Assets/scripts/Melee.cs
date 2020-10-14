@@ -18,5 +18,7 @@ public class Melee : MonoBehaviour
     void attack()
     {
         animator.SetTrigger("attack");
+
+
     }
 }
