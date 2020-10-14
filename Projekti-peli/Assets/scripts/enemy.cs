@@ -15,12 +15,19 @@ public class enemy : MonoBehaviour
     void Start()
     {
         Base = FindObjectOfType<baseScript>();
-        agent.SetDestination(Base.points[UnityEngine.Random.Range(0, Base.points.Length)].position);
+        if(Base != null)
+            agent.SetDestination(Base.points[UnityEngine.Random.Range(0, Base.points.Length)].position);
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(Base == null)
+        {
+            agent.SetDestination(GameObject.FindWithTag("Player").transform.position);
+        }
+
         animator.SetFloat("speed", agent.velocity.magnitude);
 
         if (Health <= 0)

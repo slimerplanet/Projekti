@@ -85,10 +85,11 @@ public class Gun : MonoBehaviour
 
     void Shoot()
     {
-        animator.SetTrigger("Shoot");
+        
         //muzzleflash.Play();
 
         currentAmmo--;
+        animator.SetTrigger("Shoot");
 
         RaycastHit hit;
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range, mask))
