@@ -1,0 +1,86 @@
+# Exported from Fuse 1.3.0
+
+newmtl Glove
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 1.00 1.00 1.00
+map_Kd Player_Glove_diffuse.png
+map_Ks Player_Glove_specular.png
+bump Player_Glove_normal.png
+map_Ns Player_Glove_gloss.png
+
+newmtl Body
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 1.00 1.00 1.00
+map_Kd Player_Body_diffuse.png
+map_Ks Player_Body_specular.png
+bump Player_Body_normal.png
+map_Ns Player_Body_gloss.png
+
+newmtl Shoes
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 1.00 1.00 1.00
+map_Kd Player_Shoes_diffuse.png
+map_Ks Player_Shoes_specular.png
+bump Player_Shoes_normal.png
+map_Ns Player_Shoes_gloss.png
+
+newmtl Bottom
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 1.00 1.00 1.00
+map_Kd Player_Bottom_diffuse.png
+map_Ks Player_Bottom_specular.png
+bump Player_Bottom_normal.png
+map_Ns Player_Bottom_gloss.png
+
+newmtl Hair
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 1.00 1.00 1.00
+map_Kd Player_Hair_diffuse.png
+map_Ks Player_Hair_specular.png
+bump Player_Hair_normal.png
+map_Ns Player_Hair_gloss.png
+
+newmtl Top
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 1.00 1.00 1.00
+map_Kd Player_Top_diffuse.png
+map_Ks Player_Top_specular.png
+bump Player_Top_normal.png
+map_Ns Player_Top_gloss.png
+
+newmtl Beard
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 1.00 1.00 1.00
+map_Kd Player_Beard_diffuse.png
+map_Ks Player_Beard_specular.png
+bump Player_Beard_normal.png
+map_Ns Player_Beard_gloss.png
+
