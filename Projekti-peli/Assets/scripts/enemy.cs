@@ -11,6 +11,7 @@ public class enemy : MonoBehaviour
     public int Health = 100;
     public bool hasReachedBase;
     public Animator animator;
+    public Behaviour[] componentstoDisableOnDeath;
     void Start()
     {
         Base = FindObjectOfType<baseScript>();
@@ -40,7 +41,10 @@ public class enemy : MonoBehaviour
 
     private void Die()
     {
-        Destroy(gameObject);
+        for (int i = 0; i < componentstoDisableOnDeath.Length; i++)
+        {
+            componentstoDisableOnDeath[i].enabled = false;
+        }
     }
 
     public void TakeDamage(int amount)
