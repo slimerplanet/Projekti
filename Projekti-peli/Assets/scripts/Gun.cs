@@ -43,7 +43,16 @@ public class Gun : MonoBehaviour
         if (isReloading)
             return;
 
-        if (currentAmmo <= 0)
+        if(Input.GetKeyDown(KeyCode.F))
+        {
+            animator.SetTrigger("Inspect");
+        }
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            StartCoroutine(reload());
+        }
+
+        if (currentAmmo <= 0 && !isReloading)
         {
             StartCoroutine(reload());
             return;
