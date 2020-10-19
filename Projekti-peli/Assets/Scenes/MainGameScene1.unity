@@ -32190,6 +32190,10 @@ PrefabInstance:
       propertyPath: mask.m_Bits
       value: 567
       objectReference: {fileID: 0}
+    - target: {fileID: 5463236708863025126, guid: 3dad48484495ea2449aa5de989b886bd, type: 3}
+      propertyPath: damage
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3dad48484495ea2449aa5de989b886bd, type: 3}
 --- !u!1 &5469341532236293640
