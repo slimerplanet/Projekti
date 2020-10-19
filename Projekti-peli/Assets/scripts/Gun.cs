@@ -107,6 +107,7 @@ public class Gun : MonoBehaviour
             enemy enemy = hit.transform.GetComponentInParent<enemy>();
             if (enemy != null)
             {
+                Debug.Log("zombie has " + enemy.Health + " health");
                 enemy.TakeDamage(damage);
             }
         }
