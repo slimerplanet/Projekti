@@ -7,7 +7,7 @@ public class bombThrower : MonoBehaviour
 {
     public float throwForce = 40f;
     public GameObject bombPrefab;
-    public Camera cam;
+    public Transform spawnpoint;
 
     // Update is called once per frame
     void Update()
@@ -20,8 +20,8 @@ public class bombThrower : MonoBehaviour
 
     private void throwBomb()
     {
-        GameObject bomb = Instantiate(bombPrefab, cam.transform.position, cam.transform.rotation);
+        GameObject bomb = Instantiate(bombPrefab, spawnpoint.transform.position, spawnpoint.transform.rotation);
         Rigidbody rb = bomb.GetComponent<Rigidbody>();
-        rb.AddForce(cam.transform.forward * throwForce, ForceMode.VelocityChange);
+        rb.AddForce(spawnpoint.transform.forward * throwForce, ForceMode.VelocityChange);
     }
 }

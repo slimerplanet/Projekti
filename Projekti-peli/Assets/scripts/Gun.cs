@@ -22,7 +22,7 @@ public class Gun : MonoBehaviour
 
 
     public Camera fpsCam;
-    //public ParticleSystem muzzleflash;
+    public ParticleSystem muzzleflash;
 
     private float nextTimeToFire = 0f;
 
@@ -95,7 +95,7 @@ public class Gun : MonoBehaviour
     void Shoot()
     {
         
-        //muzzleflash.Play();
+        muzzleflash.Play();
 
         currentAmmo--;
         animator.SetTrigger("Shoot");
