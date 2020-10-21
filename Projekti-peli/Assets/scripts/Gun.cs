@@ -11,6 +11,7 @@ public class Gun : MonoBehaviour
     public float speed = 100;
 
     public LayerMask mask;
+    public AudioSource source;
 
 
     public int maxammo = 15;
@@ -94,7 +95,7 @@ public class Gun : MonoBehaviour
 
     void Shoot()
     {
-        
+        source.Play();
         muzzleflash.Play();
 
         currentAmmo--;
