@@ -52,6 +52,8 @@ public class enemy : MonoBehaviour
         {
             componentstoDisableOnDeath[i].enabled = false;
         }
+
+        Destroy(gameObject, 5f);
     }
 
     public void TakeDamage(int amount)

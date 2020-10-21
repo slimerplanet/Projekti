@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 using UnityEngine;
 
 public class tower : MonoBehaviour
@@ -9,6 +10,10 @@ public class tower : MonoBehaviour
     [SerializeField] LayerMask mask;
     [SerializeField] float speed;
     [SerializeField] int Damage = 25;
+    [SerializeField] ParticleSystem muzzle;
+    [SerializeField] float fireRate;
+    float nextTimeToShoot;
+
 
 
 
@@ -20,14 +25,22 @@ public class tower : MonoBehaviour
 
     private void Start()
     {
+        nextTimeToShoot = fireRate;
         closestEnemy = null;
-        InvokeRepeating("shoot", 0.5f, 0.5f);
+        
 
 
     }
 
     private void Update()
     {
+        nextTimeToShoot -= Time.deltaTime;
+        if(nextTimeToShoot <= 0)
+        {
+            nextTimeToShoot = fireRate;
+            shoot();
+        }
+
         if (getClosestenemy() == null)
         {
             return;
@@ -44,6 +57,8 @@ public class tower : MonoBehaviour
     }
     public void shoot()
     {
+        muzzle.Play();
+
         RaycastHit hit;
         if (Physics.Raycast(gunPoint.transform.position, gunPoint.transform.forward, out hit, range, mask))
         {
