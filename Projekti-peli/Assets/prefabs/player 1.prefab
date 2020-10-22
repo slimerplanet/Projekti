@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 313591405}
   - component: {fileID: 313591404}
   - component: {fileID: 313591403}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Player_UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -114,7 +114,7 @@ GameObject:
   - component: {fileID: 395689817}
   - component: {fileID: 395689816}
   - component: {fileID: 395689815}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: icons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -214,7 +214,7 @@ GameObject:
   - component: {fileID: 520820693}
   - component: {fileID: 520820695}
   - component: {fileID: 520820694}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -294,7 +294,7 @@ GameObject:
   - component: {fileID: 557539502}
   - component: {fileID: 557539501}
   - component: {fileID: 557539500}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: pistol_icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -385,7 +385,7 @@ GameObject:
   - component: {fileID: 688405721}
   - component: {fileID: 688405720}
   - component: {fileID: 688405719}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: dynamite_icon (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -476,7 +476,7 @@ GameObject:
   - component: {fileID: 700209273}
   - component: {fileID: 700209272}
   - component: {fileID: 700209271}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: dynamite_icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -567,7 +567,7 @@ GameObject:
   - component: {fileID: 1009881138}
   - component: {fileID: 1009881137}
   - component: {fileID: 1009881136}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Take Damage Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -698,7 +698,7 @@ GameObject:
   - component: {fileID: 1229577860}
   - component: {fileID: 1229577862}
   - component: {fileID: 1229577861}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -777,7 +777,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1258276387}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -807,7 +807,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1287845551}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -845,7 +845,7 @@ GameObject:
   - component: {fileID: 1556930746}
   - component: {fileID: 1556930748}
   - component: {fileID: 1556930747}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -920,7 +920,7 @@ GameObject:
   - component: {fileID: 1648086777}
   - component: {fileID: 1648086779}
   - component: {fileID: 1648086778}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1055,7 +1055,7 @@ GameObject:
   - component: {fileID: 1814801121}
   - component: {fileID: 1814801120}
   - component: {fileID: 1814801119}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: knife_icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1144,7 +1144,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2051040194}
   - component: {fileID: 2051040195}
-  m_Layer: 5
+  - component: {fileID: 494156620}
+  m_Layer: 12
   m_Name: Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1221,6 +1222,19 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &494156620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051040193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35ca545318ee20848b0888876eae25c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 2051040195}
 --- !u!1 &81235514914806083
 GameObject:
   m_ObjectHideFlags: 0
@@ -1231,7 +1245,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5164718206749830233}
   - component: {fileID: 8508855279632713328}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Bras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1349,7 +1363,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8362826937150688387}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Majeur3.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1379,7 +1393,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3047486668865927622}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Auriculaire3.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1410,7 +1424,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6887607014056890521}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Majeur3.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1441,7 +1455,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7588944201449190637}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Index3.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1471,7 +1485,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4143784339152756532}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Auriculaire1.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1502,7 +1516,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4461192097508331953}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Index1.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1533,7 +1547,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8659812960391487845}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Auriculaire3.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1563,7 +1577,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3473790806671769003}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Majeur3.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1593,7 +1607,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2299449752573384934}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Majeur2.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1624,7 +1638,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7774908478949787604}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Pouce2.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1654,7 +1668,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4684340256111691876}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Auriculaire3.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1685,7 +1699,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 422187439100942907}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Majeur1.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1716,7 +1730,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4579595927436569442}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1748,7 +1762,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7740992219329154484}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Pouce1.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1779,7 +1793,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3240044955426701605}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Index3.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1810,7 +1824,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2456949798344753984}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Majeur3.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1841,7 +1855,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1741962396672849122}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Annulaire1.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1872,7 +1886,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3861210354039281135}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Annulaire1.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1903,7 +1917,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5493149673553609515}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Bras.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1934,7 +1948,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8380026799913881226}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Main.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1969,7 +1983,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5054272441880902772}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Bras.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2000,7 +2014,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8415568492444305848}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Annulaire2.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2031,7 +2045,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6275007537828911180}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Auriculaire1.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2062,7 +2076,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5716247041811138723}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: AvantBras.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2093,7 +2107,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4228796316986342819}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Annulaire3.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2124,7 +2138,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4236171545280910631}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Annulaire3.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2155,7 +2169,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 375918263153202167}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Annulaire1.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2186,7 +2200,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3482434983670612702}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Index2.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2217,7 +2231,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2501870698892925486}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Annulaire2.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2248,7 +2262,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5275141379704952119}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Majeur1.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2279,7 +2293,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4275345341843951686}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Index3.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2309,7 +2323,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4556777314917251188}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Pouce2.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2340,7 +2354,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9025190876601692372}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2372,7 +2386,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1888667492541444256}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Annulaire2.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2403,7 +2417,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1736286018088718298}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Auriculaire3.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2433,7 +2447,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5383021886544600319}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Auriculaire2.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2464,7 +2478,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 990027386720910903}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Pouce2.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2494,7 +2508,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6749468871989614800}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Index3.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2525,7 +2539,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1544111516744069298}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Majeur3.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2555,7 +2569,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9218212480385417669}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Auriculaire2.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2586,7 +2600,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6205272699203801463}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Index2.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2617,7 +2631,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 156618454672778052}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Majeur1.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2648,7 +2662,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6049873729299845055}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Majeur3.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2679,7 +2693,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2823204634761949170}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Arms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2711,7 +2725,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3796038116651599465}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Pouce1.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2742,7 +2756,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4164026180459188049}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Pouce1.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2773,7 +2787,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9220801540103485610}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Auriculaire1.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2804,7 +2818,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6655082952308799624}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Auriculaire3.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2834,7 +2848,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5334114082387157593}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Index1.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2865,7 +2879,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3713136277707146703}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Auriculaire2.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2896,7 +2910,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3010197678876259075}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Pouce2.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2930,13 +2944,13 @@ GameObject:
   - component: {fileID: 921436226274641494}
   - component: {fileID: 3111263951041999516}
   - component: {fileID: 3471591848030081870}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: build_hammer
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4280181926386059763
 Transform:
   m_ObjectHideFlags: 0
@@ -3029,7 +3043,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6027197482613265320}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: ArmatureBras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3060,7 +3074,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2142157489185618891}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Index3.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3091,7 +3105,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6257767818122085020}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Index1.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3122,7 +3136,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 978887050313552793}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Index3.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3152,7 +3166,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2561292622766592516}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Annulaire3.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3182,7 +3196,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2876289696993857878}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: ArmatureBras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3213,7 +3227,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5951324181018578347}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: AvantBras.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3244,7 +3258,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 12920605259891122}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Auriculaire1.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3275,7 +3289,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7002678430864578602}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Index3.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3305,7 +3319,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1134918553118526905}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Majeur2.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3336,7 +3350,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6520413165690557787}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Main.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3371,7 +3385,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1330680281377542185}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Annulaire3.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3401,7 +3415,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4448598077515130019}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Pouce2.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3431,7 +3445,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7269610657623536655}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Index2.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3462,7 +3476,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3536054542721694081}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Index2.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3493,7 +3507,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1679337921326670883}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Annulaire1.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3524,7 +3538,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9087952574544748314}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Annulaire3.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3554,7 +3568,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 14155789367529779}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Main.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3589,7 +3603,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2176290142775319788}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Index1.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3623,9 +3637,9 @@ GameObject:
   - component: {fileID: 4369999351954452765}
   - component: {fileID: 4453418728406975291}
   - component: {fileID: 4419239029316294809}
-  m_Layer: 8
+  m_Layer: 12
   m_Name: Player Camera
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3714,9 +3728,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4387081897726274927}
-  m_Layer: 8
+  m_Layer: 12
   m_Name: HeadJoint
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3750,7 +3764,7 @@ GameObject:
   - component: {fileID: 4398044957090753185}
   - component: {fileID: 4429795236696875901}
   - component: {fileID: 5463236707371627407}
-  m_Layer: 8
+  m_Layer: 12
   m_Name: player 1
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -4062,9 +4076,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4390160495824677360}
   - component: {fileID: 4390160495824677361}
-  m_Layer: 8
+  m_Layer: 12
   m_Name: weaponHolder
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4109,7 +4123,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 33245205313370457}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: AvantBras.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4140,7 +4154,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5813699738864842538}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Annulaire3.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4171,7 +4185,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6111174896873272440}
   - component: {fileID: 4634662317915658684}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: ArmatureBras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4267,7 +4281,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 738154601263591735}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Auriculaire2.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4298,7 +4312,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7971261315326729957}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Index3.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4329,7 +4343,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9128892755985987255}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Index3.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4359,7 +4373,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2737605424962135986}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Index1.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4390,7 +4404,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 385648293508474571}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Main.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4425,7 +4439,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4771411878940253359}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Index2.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4456,7 +4470,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1934174822339576157}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Majeur2.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4487,7 +4501,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8288879740170380444}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Auriculaire1.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4518,7 +4532,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1300240547696098564}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Index3.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4551,7 +4565,7 @@ GameObject:
   - component: {fileID: 5041663347497658520}
   - component: {fileID: 5018272757689948692}
   - component: {fileID: 5018272757689948695}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: knive_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4662,7 +4676,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4092698765272390013}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Pouce2.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4692,7 +4706,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2979353493321625717}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Main.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4727,7 +4741,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8999856050163443863}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Majeur2.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4758,7 +4772,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2428208493317793925}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: AvantBras.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4789,7 +4803,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5844318846587273824}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Annulaire3.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4820,7 +4834,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5956595348058441314}
   - component: {fileID: 3526341599535286731}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Bras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4938,7 +4952,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1200310294932787976}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Majeur2.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4969,7 +4983,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7992568189524316277}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Annulaire3.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5000,7 +5014,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 953364244405107252}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Annulaire3.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5030,7 +5044,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7236114707499827469}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Annulaire1.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5061,7 +5075,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236707339172574}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Index1.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5092,7 +5106,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236707475602989}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Auriculaire2.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5123,7 +5137,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236707551430639}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Index3.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5153,7 +5167,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236707560903402}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Pouce2.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5184,7 +5198,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236707574023912}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5216,7 +5230,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236707614704040}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Majeur2.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5247,7 +5261,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236707629677705}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Bras.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5278,7 +5292,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236707642692935}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Annulaire2.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5309,7 +5323,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236707745532631}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Majeur2.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5340,7 +5354,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236707772352553}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Majeur3.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5371,7 +5385,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236707785382932}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Pouce1.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5402,7 +5416,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236707817022983}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Annulaire1.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5433,7 +5447,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236707857268811}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Auriculaire3.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5464,7 +5478,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236707860464257}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Majeur3.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5494,7 +5508,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236707956788243}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Annulaire3.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5525,7 +5539,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236707971674540}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Main.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5560,7 +5574,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236707977030937}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Index3.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5591,7 +5605,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236708008679408}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Auriculaire2.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5622,7 +5636,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236708047553582}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Majeur3.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5652,7 +5666,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236708133363740}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Pouce2.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5682,7 +5696,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236708150951182}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Annulaire3.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5714,7 +5728,7 @@ GameObject:
   - component: {fileID: 5463236708181174428}
   - component: {fileID: 5463236708181174402}
   - component: {fileID: 5463236708181174429}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5794,7 +5808,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236708198337791}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: ArmatureBras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5825,7 +5839,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236708306033489}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Auriculaire1.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5856,7 +5870,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236708315822949}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: AvantBras.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5887,7 +5901,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236708364121486}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Annulaire3.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5918,7 +5932,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236708422131927}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Pouce2.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5949,7 +5963,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236708493155461}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Annulaire2.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5980,7 +5994,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236708552459458}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Main.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6015,7 +6029,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236708600735606}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Arms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6047,7 +6061,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236708602165622}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Annulaire3.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6077,7 +6091,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236708608065933}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Majeur3.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6108,7 +6122,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236708639523039}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Index3.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6143,7 +6157,7 @@ GameObject:
   - component: {fileID: 5463236708653705660}
   - component: {fileID: 5463236708653705663}
   - component: {fileID: 5463236708653705662}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: magazine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6235,7 +6249,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236708662079266}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Auriculaire3.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6265,7 +6279,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236708670365182}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Pouce1.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6296,7 +6310,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236708770631814}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Auriculaire1.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6327,7 +6341,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236708773081480}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Index1.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6358,7 +6372,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236708894887207}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: AvantBras.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6389,7 +6403,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236708983984872}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Majeur1.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6420,7 +6434,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236708984185985}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Annulaire1.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6452,7 +6466,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5463236709002136667}
   - component: {fileID: 5463236709002136665}
-  m_Layer: 8
+  m_Layer: 12
   m_Name: weaponCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6526,7 +6540,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5463236709025463944}
   - component: {fileID: 5463236709025463945}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Bras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6644,7 +6658,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236709088368013}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Pouce2.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6674,7 +6688,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236709099568486}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Majeur1.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6705,7 +6719,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236709177166895}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Auriculaire3.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6736,7 +6750,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236709184324140}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Index3.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6766,7 +6780,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236709205136286}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Index2.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6797,7 +6811,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236709216554086}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Bras.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6828,7 +6842,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236709308396209}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Auriculaire3.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6858,7 +6872,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5463236709417440937}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Index2.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6892,7 +6906,7 @@ GameObject:
   - component: {fileID: 5463236708863025127}
   - component: {fileID: 5463236708863025126}
   - component: {fileID: 612332298}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: pistol_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7068,8 +7082,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3625866574441558639}
-  m_Layer: 13
-  m_Name: GameObject
+  m_Layer: 12
+  m_Name: spawnPont
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7083,7 +7097,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5648995769238457167}
   m_LocalRotation: {x: 0.57338035, y: -0.00000018922795, z: -0.000000053703282, w: 0.8192894}
-  m_LocalPosition: {x: 0.95, y: -2.462, z: 0.142}
+  m_LocalPosition: {x: 0.327, y: -2.263, z: 0.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2958708197719956019}
@@ -7099,13 +7113,13 @@ GameObject:
   m_Component:
   - component: {fileID: 2958708197719956019}
   - component: {fileID: 2037521265}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: boom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2958708197719956019
 Transform:
   m_ObjectHideFlags: 0
@@ -7150,7 +7164,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7370187191225128348}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Majeur3.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7180,7 +7194,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2985593630967236223}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Bras.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7211,7 +7225,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 921065721913877739}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Auriculaire2.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7242,7 +7256,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5743096622034452507}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Index3.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7274,7 +7288,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6549287030836876845}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Pouce2.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7305,7 +7319,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4657380382845231329}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Auriculaire2.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7336,7 +7350,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6056192120522132188}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Arms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7368,7 +7382,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5155459955626189639}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Pouce1.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7399,7 +7413,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4355494774439079309}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: AvantBras.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7430,7 +7444,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5299136789887735949}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Annulaire3.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7461,7 +7475,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5326637536998797321}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Annulaire3.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7492,7 +7506,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2607774495107579234}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Auriculaire1.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7523,7 +7537,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 571950525727763606}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Annulaire2.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7554,7 +7568,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4184110337659908121}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Majeur1.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7585,7 +7599,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4859941619963635696}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Index2.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7616,7 +7630,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 314361449526345887}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Annulaire2.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7647,7 +7661,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7570557700263089550}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Annulaire2.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7678,7 +7692,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7727444560944753396}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Auriculaire3.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7708,7 +7722,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1031672065512524374}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Auriculaire3.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7739,7 +7753,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5483431471688867162}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Pouce2.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7770,7 +7784,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3661478811844659838}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Majeur3.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7800,7 +7814,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2783387900714068711}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Pouce2.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7831,7 +7845,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3354914678730554878}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Index3.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7863,7 +7877,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9122229767904254745}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Pouce2.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7893,7 +7907,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7875919062846728316}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: AvantBras.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7924,7 +7938,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2842360703050910855}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Pouce2.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7955,7 +7969,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 681758823364431403}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Bras.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7986,7 +8000,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3220162912481752503}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Majeur3.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8017,7 +8031,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6444435525569404136}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Auriculaire3.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8049,7 +8063,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3785593063571048823}
   - component: {fileID: 373910671352537950}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Bras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8167,7 +8181,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7657804883030915470}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Majeur1.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8198,7 +8212,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7106200146364523286}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Annulaire3.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8229,7 +8243,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7839828312808111560}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Majeur2.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8260,7 +8274,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5678112921537131679}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Index1.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8291,7 +8305,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 794943662997914699}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Auriculaire3.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8321,7 +8335,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4832504618006419589}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Majeur3.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8351,7 +8365,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5523697063716163148}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8383,7 +8397,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3614136128960769354}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Auriculaire3.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8414,7 +8428,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8574301945932250901}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Majeur1.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8445,7 +8459,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1784521786948100858}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Pouce2.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8475,7 +8489,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6338024553170330605}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Auriculaire3.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8505,7 +8519,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3819475848002427226}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Bras.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8536,7 +8550,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4548201917480855045}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Bras.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8567,7 +8581,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1981523225753431243}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Pouce1.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8598,7 +8612,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4880222905338393321}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Auriculaire3.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8629,7 +8643,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 535425829134134180}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Main.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8664,7 +8678,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2195950911864335299}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Majeur3.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8695,7 +8709,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5093612211727200449}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Annulaire1.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8726,7 +8740,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5853894323573859950}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Majeur3.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8757,7 +8771,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1749758841096530074}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Pouce1.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8792,11 +8806,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1743301284569550, guid: ad2ab49d0a2a17148bd51c93d977bdbc, type: 3}
       propertyPath: m_Layer
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1992675705445476, guid: ad2ab49d0a2a17148bd51c93d977bdbc, type: 3}
       propertyPath: m_Layer
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4300533007854612, guid: ad2ab49d0a2a17148bd51c93d977bdbc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8915,7 +8929,7 @@ PrefabInstance:
     - target: {fileID: 174397726572598607, guid: f2c1a48a342718c4eb642a5595ac2167,
         type: 3}
       propertyPath: m_Layer
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2c1a48a342718c4eb642a5595ac2167, type: 3}
@@ -8938,11 +8952,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1743301284569550, guid: ad2ab49d0a2a17148bd51c93d977bdbc, type: 3}
       propertyPath: m_Layer
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1992675705445476, guid: ad2ab49d0a2a17148bd51c93d977bdbc, type: 3}
       propertyPath: m_Layer
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4300533007854612, guid: ad2ab49d0a2a17148bd51c93d977bdbc, type: 3}
       propertyPath: m_LocalPosition.x

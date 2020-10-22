@@ -9,11 +9,16 @@ public class enemy : MonoBehaviour
     public NavMeshAgent agent;
     baseScript Base;
     public int Health = 100;
-    public bool hasReachedBase;
+    bool hasReachedtarget;
     public Animator animator;
     public Behaviour[] componentstoDisableOnDeath;
+    public float attackDelay = 1;
+    public int damage = 25;
+    float countdown;
+
     void Start()
     {
+        countdown = attackDelay;
         Base = FindObjectOfType<baseScript>();
         if(Base != null)
             agent.SetDestination(Base.points[UnityEngine.Random.Range(0, Base.points.Length)].position);
@@ -23,6 +28,20 @@ public class enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(hasReachedtarget)
+        {
+            countdown -= Time.deltaTime;
+            if (countdown <= 0)
+            {
+                countdown = attackDelay;
+                if(Base == null)
+                {
+                    GameObject.FindWithTag("Player").GetComponent<PlayerHealth>().TakeDamage(damage);
+                }
+            }
+        }
+
+
         if(Base == null)
         {
             agent.SetDestination(GameObject.FindWithTag("Player").transform.position);
@@ -35,15 +54,17 @@ public class enemy : MonoBehaviour
 
         if (agent.remainingDistance <= agent.stoppingDistance)
         {
-            hasReachedBase = true;
+            hasReachedtarget = true;
         }
         else
         {
-            hasReachedBase = false;
+            hasReachedtarget = false;
         }
 
         
-        animator.SetBool("Attacking", hasReachedBase);
+
+        
+        animator.SetBool("Attacking", hasReachedtarget);
     }
 
     private void Die()
