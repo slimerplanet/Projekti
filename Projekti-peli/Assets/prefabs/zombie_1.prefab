@@ -850,7 +850,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 1
+  m_StoppingDistance: 1.5
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -872,12 +872,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 2223864069474676568}
   Health: 100
-  hasReachedBase: 0
   animator: {fileID: 4861421318589345701}
   componentstoDisableOnDeath:
   - {fileID: 2223864069474676568}
   - {fileID: 4861421318589345701}
   - {fileID: 2223864069474676583}
+  attackDelay: 1
+  damage: 25
 --- !u!114 &2223864069474676582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1351,7 +1352,7 @@ GameObject:
   - component: {fileID: 6074777947690212399}
   m_Layer: 0
   m_Name: zombie_1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3230,7 +3231,7 @@ GameObject:
   - component: {fileID: 8456336075668361553}
   m_Layer: 0
   m_Name: mixamorig:Head
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

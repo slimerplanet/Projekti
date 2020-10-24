@@ -42,7 +42,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4564bea15b6d33f48911fbac9e9e6ab6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 3
+  delay: 2
   radius: 5
   force: 700
   damage: 100

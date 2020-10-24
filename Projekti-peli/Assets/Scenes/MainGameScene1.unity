@@ -1887,6 +1887,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 203432731}
+    - target: {fileID: 1556930746, guid: 3dad48484495ea2449aa5de989b886bd, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1556930746, guid: 3dad48484495ea2449aa5de989b886bd, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4387410707859969681, guid: 3dad48484495ea2449aa5de989b886bd,
         type: 3}
       propertyPath: m_LocalPosition.x

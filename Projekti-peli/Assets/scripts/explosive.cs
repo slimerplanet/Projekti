@@ -47,6 +47,11 @@ public class explosive : MonoBehaviour
             {
                 enemy.TakeDamage(damage);
             }
+            PlayerHealth health = nearbyObject.GetComponent<PlayerHealth>();
+            if (health != null)
+            {
+                health.TakeDamage(damage);
+            }
         }
         Collider[] collidersToMove = Physics.OverlapSphere(transform.position, radius);
         foreach (Collider nearbyObject in collidersToMove)
