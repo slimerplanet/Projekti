@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
+using UnityEngine.SceneManagement;
 
 public class pausemenu : MonoBehaviour
 {
@@ -51,6 +52,10 @@ public class pausemenu : MonoBehaviour
     {
         Application.Quit();
         Debug.Log("quit");
+    }
+    public void GoToMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 }
 

@@ -5,14 +5,20 @@ public class weaponSwitching : MonoBehaviour
 {
 
     public int selectedWeapon = 0;
+    pausemenu menu;
 
     void Start()
     {
+        menu = FindObjectOfType<pausemenu>();
         selectWeapon();
     }
 
     void Update()
     {
+        if (menu.paused)
+            return;
+   
+
         int previosSelectedWeapon = selectedWeapon;
 
         if(Input.GetAxis("Mouse ScrollWheel") < 0f)
