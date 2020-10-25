@@ -24,8 +24,14 @@ public class pausemenu : MonoBehaviour
                 Pause();
             }
         }
-
-
+        if(paused)
+        {
+            Cursor.lockState = CursorLockMode.None;
+        }else
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+        controller.controllerPauseState = false;
     }
 
     public void Pause()
@@ -36,7 +42,7 @@ public class pausemenu : MonoBehaviour
     }
 
     public void Resume()
-    {
+    {        
         PauseMenuUI.SetActive(false);
         Time.timeScale = 1;
         paused = false;
