@@ -52,7 +52,7 @@ public class enemy : MonoBehaviour
         if (Health <= 0)
             Die();
 
-        if (agent.remainingDistance <= agent.stoppingDistance)
+        if (agent.remainingDistance <= agent.stoppingDistance && agent != null)
         {
             hasReachedtarget = true;
         }

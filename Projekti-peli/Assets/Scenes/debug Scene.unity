@@ -1120,6 +1120,7 @@ GameObject:
   - component: {fileID: 827785045}
   - component: {fileID: 827785044}
   - component: {fileID: 827785046}
+  - component: {fileID: 827785047}
   m_Layer: 0
   m_Name: _GameManager
   m_TagString: Untagged
@@ -1163,6 +1164,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c72a65157c902f949a3ffaabbe9b2a51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &827785047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827785043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9851d2991e52594aaac66f979a2c318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &884491937
@@ -1392,7 +1405,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26558
+  m_Name: pb_Mesh17738
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -19914,7 +19927,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea2610951ebb31c4086a6ca9dcc9b7c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 150
+  Health: 500
 --- !u!4 &5463236708296413648
 Transform:
   m_ObjectHideFlags: 0

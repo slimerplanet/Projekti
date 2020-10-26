@@ -449,8 +449,9 @@ public class FirstPersonAIO : MonoBehaviour {
                     }
                 }
                 Debug.DrawRay(transform.position, MoveDirection,Color.red,0,false);
-            #endregion
-            
+        #endregion
+
+        
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
         inputXY = new Vector2(horizontalInput, verticalInput);
