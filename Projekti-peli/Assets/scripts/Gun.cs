@@ -20,7 +20,7 @@ public class Gun : MonoBehaviour
     private bool isReloading;
 
 
-
+    pausemenu menu;
 
     public Camera fpsCam;
     public ParticleSystem muzzleflash;
@@ -31,6 +31,7 @@ public class Gun : MonoBehaviour
 
     private void Start()
     {
+        menu = FindObjectOfType<pausemenu>();
         currentAmmo = maxammo;
     }
 
@@ -41,7 +42,9 @@ public class Gun : MonoBehaviour
     }
     void Update()
     {
-        if (isReloading)
+
+
+        if (isReloading || menu.paused)
             return;
 
         if(Input.GetKeyDown(KeyCode.F))

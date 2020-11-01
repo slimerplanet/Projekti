@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
+using UnityEngine.SceneManagement;
 
 public class pausemenu : MonoBehaviour
 {
@@ -24,25 +25,22 @@ public class pausemenu : MonoBehaviour
                 Pause();
             }
         }
-        if(paused)
-        {
-            Cursor.lockState = CursorLockMode.None;
-        }else
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-        }
+
+
         controller.controllerPauseState = false;
     }
 
     public void Pause()
     {
+        Cursor.lockState = CursorLockMode.None;
         PauseMenuUI.SetActive(true);
         Time.timeScale = 0;
         paused = true;
     }
 
     public void Resume()
-    {        
+    {
+        Cursor.lockState = CursorLockMode.Locked;
         PauseMenuUI.SetActive(false);
         Time.timeScale = 1;
         paused = false;
@@ -51,6 +49,10 @@ public class pausemenu : MonoBehaviour
     {
         Application.Quit();
         Debug.Log("quit");
+    }
+    public void GoToMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 }
 

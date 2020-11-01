@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 
 public class explosive : MonoBehaviour
 {
@@ -12,6 +12,9 @@ public class explosive : MonoBehaviour
     public int damage = 100;
 
     public GameObject explosionEffect;
+    AudioSource source;
+    public GameObject sound;
+    public AudioClip[] clips;
 
     float countDown;
     bool HasExploded = false;
@@ -35,6 +38,11 @@ public class explosive : MonoBehaviour
 
     private void Explode()
     {
+         var ins = Instantiate(sound, transform.position, transform.rotation);
+        source = ins.GetComponent<AudioSource>();
+        source.clip = clips[Random.Range(0, clips.Length)];
+        source.Play();
+        Destroy(ins, 5);
         var _explosion = Instantiate(explosionEffect, transform.position, transform.rotation);
         Destroy(_explosion, 1f);
 
