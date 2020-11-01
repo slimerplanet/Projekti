@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemNmae: 
   Icon: {fileID: 0}
-  Damage: 0
+  Damage: 4
   DamageResistance: 0
   Defence: 0
   DamagePrecentBonus: 0
   DamageResistancePrecentBonus: 0
-  EquipmentType: 0
+  EquipmentType: 4
