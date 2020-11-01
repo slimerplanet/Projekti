@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/debug Scene.unity
     guid: b18a1ec85933844459b24e5b7e5306b1
+  - enabled: 1
+    path: Assets/Scenes/car test scene.unity
+    guid: c4536e9cadead6b43bd7c0687b84d33b
+  - enabled: 1
+    path: Assets/Scenes/snowy mountains.unity
+    guid: fd330b5f820e9924683d282407c23a7e
   m_configObjects: {}
