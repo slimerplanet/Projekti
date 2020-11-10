@@ -7,7 +7,7 @@ public class Debugcontroller : MonoBehaviour
 {
     public GameObject zombiePrefab;
     public Camera cam;
-    
+    public FirstPersonAIO playerController;
     
     
     bool showConsole;
@@ -19,6 +19,8 @@ public class Debugcontroller : MonoBehaviour
     public static DebugCommand<int> SET_HEALTH;
     public static DebugCommand HELP;
     public static DebugCommand SPAWN_ZOMBIE;
+    public static DebugCommand<int> SET_SPEED;
+   
 
     public List<object> commandList;
 
@@ -49,6 +51,12 @@ public class Debugcontroller : MonoBehaviour
             Instantiate(zombiePrefab, cam.transform.position + offset, Quaternion.identity);
         });
 
+        SET_SPEED = new DebugCommand<int>("setspeed", "sets the speed of the player", "setspeed <speed>", (x) =>
+        {
+            playerController.walkSpeed = x;
+            playerController.sprintSpeed = x * 2;
+        });
+
 
         commandList = new List<object>
         {
@@ -56,6 +64,7 @@ public class Debugcontroller : MonoBehaviour
             SET_HEALTH,
             HELP,
             SPAWN_ZOMBIE,
+            SET_SPEED,
         };
 
 
@@ -65,6 +74,16 @@ public class Debugcontroller : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            if (showConsole)
+            {
+                Debug.Log("enterPressed");
+                HandleInput();
+                input = "";
+            }
+        }
+
         if (Input.GetKeyDown(KeyCode.F8))
         {
             if (showConsole)
@@ -74,15 +93,7 @@ public class Debugcontroller : MonoBehaviour
             showConsole = !showConsole;
             
         }
-        if (Input.GetKeyDown(KeyCode.Return))
-        {
-            if(showConsole)
-            {
-                Debug.Log("enterPressed");
-                HandleInput();
-                input = "";
-            }
-        }
+
     }
 
     Vector2 scroll;
