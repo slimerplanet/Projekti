@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96bbe83b410a3894991442bab08ef1e8, type: 3}
   m_Name: Machete
   m_EditorClassIdentifier: 
-  ItemNmae: 
+  ItemName: Machete
   Icon: {fileID: 0}
   Damage: 4
   DamageResistance: 0
