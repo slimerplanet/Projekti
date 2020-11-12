@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Debugcontroller : MonoBehaviour
@@ -20,6 +21,7 @@ public class Debugcontroller : MonoBehaviour
     public static DebugCommand HELP;
     public static DebugCommand SPAWN_ZOMBIE;
     public static DebugCommand<int> SET_SPEED;
+    public static DebugCommand<int> LOAD_LEVEL;
    
 
     public List<object> commandList;
@@ -57,6 +59,11 @@ public class Debugcontroller : MonoBehaviour
             playerController.sprintSpeed = x * 2;
         });
 
+        LOAD_LEVEL = new DebugCommand<int>("loadlevel", "loads a level", "loadlevel <index>", (x) =>
+        {
+            SceneManager.LoadScene(x);
+        });
+
 
         commandList = new List<object>
         {
@@ -65,6 +72,7 @@ public class Debugcontroller : MonoBehaviour
             HELP,
             SPAWN_ZOMBIE,
             SET_SPEED,
+            LOAD_LEVEL,
         };
 
 

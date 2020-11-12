@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 public class pausemenu : MonoBehaviour
 {
     public FirstPersonAIO controller;
+    public GameObject player;
     public GameObject PauseMenuUI;
 
     public bool paused;
@@ -54,6 +55,9 @@ public class pausemenu : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+
+
+
 }
 
 
