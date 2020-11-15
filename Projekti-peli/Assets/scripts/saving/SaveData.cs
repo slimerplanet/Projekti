@@ -7,6 +7,7 @@ public class SaveData
 {
     private static SaveData _current;
 
+    
     public static SaveData current
     {
         get
@@ -28,6 +29,5 @@ public class SaveData
 
     public PlayerData playerdata;
     public int sceneIndex;
-
     public List<EnemyData> enemies;
 }

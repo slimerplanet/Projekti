@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
 {
-    [SerializeField] Inventory inventory;
+  /*  [SerializeField] Inventory inventory;
     [SerializeField] EquipmentPanel equipmentPanel;
 
     public void Equip(EquippableItem item)
@@ -24,5 +24,5 @@ public class InventoryManager : MonoBehaviour
                 inventory.AddItem(item);
             }
         }
-    }
+    }*/
 }

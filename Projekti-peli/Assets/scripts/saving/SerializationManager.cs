@@ -7,6 +7,8 @@ using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 
+[System.Serializable]
+
 public class SerializationManager : MonoBehaviour
 {
     public static bool Save(string saveName, object savedata)

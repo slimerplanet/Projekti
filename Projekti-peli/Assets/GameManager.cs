@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 [System.Serializable]
 public class GameManager : MonoBehaviour
 {
+    
     public GameObject player;
     pausemenu pause;
 
