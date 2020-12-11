@@ -8,12 +8,12 @@ public class enemy : MonoBehaviour
 {
     public NavMeshAgent agent;
     baseScript Base;
-    public int Health = 100;
+    public float Health = 100;
     bool hasReachedtarget;
     public Animator animator;
     public Behaviour[] componentstoDisableOnDeath;
     public float attackDelay = 1;
-    public int damage = 25;
+    public float damage = 25;
     float countdown;
 
     void Start()
@@ -77,7 +77,7 @@ public class enemy : MonoBehaviour
         Destroy(gameObject, 5f);
     }
 
-    public void TakeDamage(int amount)
+    public void TakeDamage(float amount)
     {
         Health -= amount;
     }

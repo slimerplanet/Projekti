@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class DealDamage : MonoBehaviour 
 {
-	public void SendDamage (int dam)
+	public void SendDamage (float damage)
 	{
 		PlayerHealth playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
-		playerStats.TakeDamage(dam);
+		playerStats.TakeDamage(damage);
 	}
 }

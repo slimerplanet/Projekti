@@ -4,16 +4,19 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class PlayerHealth : MonoBehaviour 
 {
-	public int Health = 150;
+	public float Health = 150;
+	public float dmgRes = 0.1f;
+	private float finalDamage;
 	void Update()
 	{
 		if (Health <= 0)
             Die();
 	}
 
-	public void TakeDamage(int damage)
+	public void TakeDamage(float damage)
 	{
-		Health -= damage;
+		finalDamage = damage * dmgRes;
+		Health -= finalDamage;
 		Debug.Log("Health = " + Health.ToString());
 	}
 
