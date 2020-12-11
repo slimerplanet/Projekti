@@ -16,6 +16,8 @@ public class enemy : MonoBehaviour
     public int damage = 25;
     float countdown;
 
+    public bool canSeePlayer;
+
     void Start()
     {
         countdown = attackDelay;
