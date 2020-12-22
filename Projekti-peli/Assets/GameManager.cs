@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        transform.parent = null;
         pause = FindObjectOfType<pausemenu>();
         pause.Resume();
     }
@@ -19,7 +20,9 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (player == null)
+            player = GameObject.FindGameObjectWithTag("Player"); 
+            
     }
 
     public void save()

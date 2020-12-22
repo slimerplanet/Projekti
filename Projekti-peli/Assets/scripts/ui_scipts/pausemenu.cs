@@ -11,6 +11,8 @@ public class pausemenu : MonoBehaviour
     public GameObject player;
     public GameObject PauseMenuUI;
 
+
+
     public bool paused;
 
     // Update is called once per frame
@@ -29,6 +31,11 @@ public class pausemenu : MonoBehaviour
 
 
         controller.controllerPauseState = false;
+    }
+
+    private void Start()
+    {
+        transform.parent = null;
     }
 
     public void Pause()

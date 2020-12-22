@@ -8,8 +8,8 @@ namespace CarterGames.Assets.SaveManager
     [Serializable]
     public class SaveData
     {
-
-
-
+        [SerializeField] public SaveVector3 playerPos;
+        [SerializeField] public float levelIndex;
+        [SerializeField] public int health;
     }
 }

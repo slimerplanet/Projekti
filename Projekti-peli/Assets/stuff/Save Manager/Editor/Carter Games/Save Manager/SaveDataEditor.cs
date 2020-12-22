@@ -41,6 +41,9 @@ namespace CarterGames.Assets.SaveManager
         private List<bool> shouldList;
         private List<string> classNames;
 
+
+
+
         // Variables used in the read class window
         private bool hasReadFile;
         private List<string> readLines;
