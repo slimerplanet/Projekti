@@ -3,31 +3,38 @@ using System.Collections;
 
 public class Gun : MonoBehaviour
 {
+
+    [Header("stats")]
     public int damage = 10;
     public float range = 100;
     public float fireRate = 15;
     public bool isAutomatic;
     public float impactForce = 30;
     public float speed = 100;
+    public int maxammo = 15;
+    public float reloadTime;
 
+
+    
+    
+
+
+    [Header("refrences")]
+    
+    pausemenu menu;
+    public Animator animator;
+    public Camera fpsCam;
+    public ParticleSystem muzzleflash;
     public LayerMask mask;
     public AudioSource source;
+    public GameObject[] bulletHoles;
 
 
-    public int maxammo = 15;
+    private float nextTimeToFire = 0f;
     private int currentAmmo;
-    public float reloadTime;
     private bool isReloading;
 
 
-    pausemenu menu;
-
-    public Camera fpsCam;
-    public ParticleSystem muzzleflash;
-
-    private float nextTimeToFire = 0f;
-
-    public Animator animator;
 
     private void Start()
     {
@@ -114,6 +121,9 @@ public class Gun : MonoBehaviour
                 Debug.Log("zombie has " + enemy.Health + " health");
                 enemy.TakeDamage(damage);
             }
+            var _hole = Instantiate(bulletHoles[Random.Range(0, bulletHoles.Length)], hit.point, Quaternion.LookRotation(hit.normal));
+            _hole.transform.parent = hit.collider.transform;
+            Destroy(_hole, 60);
         }
 
         if (hit.rigidbody != null)
