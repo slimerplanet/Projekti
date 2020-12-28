@@ -11,6 +11,7 @@ public class weaponSwitching : MonoBehaviour
     {
         menu = FindObjectOfType<pausemenu>();
         selectWeapon();
+        InvokeRepeating("selectedWeapon", 0.5f, 0.5f);
     }
 
     void Update()

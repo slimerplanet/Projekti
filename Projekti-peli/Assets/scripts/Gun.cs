@@ -126,7 +126,7 @@ public class Gun : MonoBehaviour
             Destroy(_hole, 60);
         }
 
-        if (hit.rigidbody != null)
+        if (hit.rigidbody != null && hit.collider.gameObject.tag != "Enemy")
         {
             hit.rigidbody.AddForce(-hit.normal * impactForce);
         }
