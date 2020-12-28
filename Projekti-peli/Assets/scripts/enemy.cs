@@ -7,7 +7,6 @@ using UnityEngine.AI;
 public class enemy : MonoBehaviour
 {
     public NavMeshAgent agent;
-    baseScript Base;
     public float Health = 100;
     bool hasReachedtarget;
     public Animator animator;
@@ -20,10 +19,7 @@ public class enemy : MonoBehaviour
 
     void Start()
     {
-        countdown = attackDelay;
-        Base = FindObjectOfType<baseScript>();
-        if(Base != null)
-            agent.SetDestination(Base.points[UnityEngine.Random.Range(0, Base.points.Length)].position);
+
         
     }
 
@@ -36,15 +32,15 @@ public class enemy : MonoBehaviour
             if (countdown <= 0)
             {
                 countdown = attackDelay;
-                if(Base == null)
-                {
+                
+                
                     GameObject.FindWithTag("Player").GetComponent<PlayerHealth>().TakeDamage(damage);
-                }
+                
             }
         }
 
 
-        if(Base == null)
+        if(canSeePlayer && !hasReachedtarget)
         {
             agent.SetDestination(GameObject.FindWithTag("Player").transform.position);
         }
@@ -53,19 +49,7 @@ public class enemy : MonoBehaviour
 
         if (Health <= 0)
             Die();
-
-        if (agent.remainingDistance <= agent.stoppingDistance && agent != null)
-        {
-            hasReachedtarget = true;
-        }
-        else
-        {
-            hasReachedtarget = false;
-        }
-
-        
-
-        
+              
         animator.SetBool("Attacking", hasReachedtarget);
     }
 
@@ -76,11 +60,28 @@ public class enemy : MonoBehaviour
             componentstoDisableOnDeath[i].enabled = false;
         }
 
-        Destroy(gameObject, 5f);
+        Destroy(gameObject, 6f);
     }
 
     public void TakeDamage(float amount)
     {
         Health -= amount;
+    }
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "player")
+        {
+            hasReachedtarget = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            hasReachedtarget = false;
+        }
     }
 }
