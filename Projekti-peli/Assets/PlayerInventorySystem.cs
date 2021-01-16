@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerInventory : MonoBehaviour
+public class PlayerInventorySystem : MonoBehaviour
 {
     [Header(" ")]
     public bool hasPistol;
